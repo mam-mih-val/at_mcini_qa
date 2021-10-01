@@ -12,7 +12,7 @@ void AddParticlesQA(QA::Task *qa_manager, int pdg_code) {
   qa_manager->AddH1({"p_{T}, #frac{GeV}{c}", {"particles", "pT"}, {500, 0.0, 2.5}}, particle);
   qa_manager->AddH1({"#phi, rad", {"particles", "phi"}, {350, -3.5, 3.5}}, particle);
 
-  qa_manager->AddH2({"y_{cm}", {"particles", "rapidity"}, {200, -1.0, 1.0}},
+  qa_manager->AddH2({"y_{cm}", {"particles", "rapidity"}, {200, -2.0, 2.0}},
                     {"pt, #frac{GeV}{c}", {"particles", "pT"}, {200, 0.0, 2.5}},
                     particle);
 
@@ -22,7 +22,7 @@ void AddParticlesQA(QA::Task *qa_manager, int pdg_code) {
   qa_manager->AddH2({"#eta", {"particles", "eta"}, {250, -2.5, 2.5}},
                     {"pt, #frac{GeV}{c}", {"particles", "pT"}, {250, 0.0, 2.5}},
                     particle);
-  qa_manager->AddH2({"y_{cm}", {"particles", "rapidity"}, {200, -1.0, 1.0}},
+  qa_manager->AddH2({"y_{cm}", {"particles", "rapidity"}, {200, -2.0, 2.0}},
                     {"#phi, [rad]", {"particles", "phi"}, {350, -3.5, 3.5}},
                     particle);
   qa_manager->AddH2({"p, #frac{GeV}{c}", {"particles", "p"}, {250, 0.0, 5.0}},
